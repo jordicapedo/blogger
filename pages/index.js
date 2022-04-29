@@ -13,7 +13,7 @@ export default function Home({ allPostsData }) {
       </Head>
       <section className={utilStyles.headingMd}>
         <p>Hi, I'm Jordi. I'm a Front End Developer and I'm learning Nextjs rigth now. </p>
-        <img src="https://media.giphy.com/media/VgCDAzcKvsR6OM0uWg/giphy.gif" width="50"/>{' '}<h3>A little more about me...</h3>        
+        <img src="https://media.giphy.com/media/VgCDAzcKvsR6OM0uWg/giphy.gif" width="50"/><h3>A little more about me...</h3>        
         <ul>
           <li>
             nickname: george
