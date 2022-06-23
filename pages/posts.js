@@ -6,12 +6,12 @@ import Date from '../components/date'
 
 export default function Post({ allPostsData }) {
   return (
-    <Layout posts>
+    <Layout>
       <Head>
         <title>Jordi's Blog</title>
       </Head>
       <section className="">
-        <h2 className="">Blog</h2>
+        <h2 className="text-2xl font-bold mb-4">Blog</h2>
         <ul className="">
           {allPostsData.map(({ id, date, title }) => (
             <li className="" key={id}>

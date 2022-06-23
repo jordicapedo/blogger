@@ -1,6 +1,5 @@
 import Head from 'next/head'
 import Image from 'next/image'
-import styles from './layout.module.css'
 import Link from 'next/link'
 
 const name = 'Jordi Capellades'
@@ -8,7 +7,7 @@ export const siteTitle = 'Jordi Capellades'
 
 export default function Layout({ children, home }) {
   return (
-    <div className={styles.container}>
+    <div className="container mt-24 mx-auto flex flex-col items-center justify-center">
       <Head>
         <title>Jordi Capellades</title>
         <link rel="icon" href="https://emojicdn.elk.sh/🦁" />
@@ -25,18 +24,18 @@ export default function Layout({ children, home }) {
         <meta name="og:title" content={siteTitle} />
         <meta name="twitter:card" content="summary_large_image" />
       </Head>
-      <header className={styles.header}>
+      <header className="">
         {home && (
           <>
             <Image
               priority
               src="/images/profile.jpg"
-              className=""
+              className="rounded-full w-32 h-32 mx-auto"
               height={144}
               width={144}
               alt={name}
             />
-            <h1 className="">{name}</h1>
+            <h1 className="text-2xl font-bold">{name}</h1>
           </>
         )}
       </header>
@@ -44,7 +43,7 @@ export default function Layout({ children, home }) {
       {!home && (
         <div className="">
           <Link href="/">
-            <a>← Back to home</a>
+            <a className="">← Back to home</a>
           </Link>
         </div>
       )}

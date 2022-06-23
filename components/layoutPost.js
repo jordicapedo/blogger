@@ -1,14 +1,13 @@
 import Head from 'next/head'
 import Image from 'next/image'
-import styles from './layout.module.css'
 import Link from 'next/link'
 
 const name = 'Jordi Capellades'
 export const siteTitle = 'Jordi Capellades'
 
-export default function Layout({ children, home, posts }) {
+export default function Layout({ children }) {
   return (
-    <div className={styles.container}>
+    <div className="container mt-24 mx-auto flex flex-col items-center justify-center">
       <Head>
         <title>Jordi Capellades</title>
         <link rel="icon" href="https://emojicdn.elk.sh/🦁" />
@@ -25,14 +24,16 @@ export default function Layout({ children, home, posts }) {
         <meta name="og:title" content={siteTitle} />
         <meta name="twitter:card" content="summary_large_image" />
       </Head>
-      <main className="mb-10">{children}</main>
-      <div className="">
-        <Link href="/posts">
-          <a className="font-bold text-sky-600 hover:underline">
-            ← Back to posts
-          </a>
-        </Link>
-      </div>
+      <main className="mb-10">
+        {children}
+        <div className="mt-10">
+          <Link href="/posts">
+            <a className="font-bold text-sky-600 hover:underline">
+              ← Back to posts
+            </a>
+          </Link>
+        </div>
+      </main>
     </div>
   )
 }

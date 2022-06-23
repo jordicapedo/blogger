@@ -5,7 +5,7 @@ import Link from 'next/link'
 export default function Home({ allPostsData }) {
   return (
     <Layout home>
-      <section className="leading-8">
+      <section className="">
         <p className="text-[#3f3f46]">
           Jordi is a developer based in Barcelona with a passion for create and
           building digital stuff. He is currently learning Frontend
