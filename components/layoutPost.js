@@ -6,7 +6,7 @@ import Link from 'next/link'
 const name = 'Jordi Capellades'
 export const siteTitle = 'Jordi Capellades'
 
-export default function Layout({ children, home }) {
+export default function Layout({ children, home, posts }) {
   return (
     <div className={styles.container}>
       <Head>
@@ -25,29 +25,14 @@ export default function Layout({ children, home }) {
         <meta name="og:title" content={siteTitle} />
         <meta name="twitter:card" content="summary_large_image" />
       </Head>
-      <header className={styles.header}>
-        {home && (
-          <>
-            <Image
-              priority
-              src="/images/profile.jpg"
-              className=""
-              height={144}
-              width={144}
-              alt={name}
-            />
-            <h1 className="">{name}</h1>
-          </>
-        )}
-      </header>
-      <main>{children}</main>
-      {!home && (
-        <div className="">
-          <Link href="/">
-            <a>← Back to home</a>
-          </Link>
-        </div>
-      )}
+      <main className="mb-10">{children}</main>
+      <div className="">
+        <Link href="/posts">
+          <a className="font-bold text-sky-600 hover:underline">
+            ← Back to posts
+          </a>
+        </Link>
+      </div>
     </div>
   )
 }

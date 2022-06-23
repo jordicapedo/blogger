@@ -1,22 +1,23 @@
-import Layout from '../../components/layout'
+import LayoutPost from '../../components/layoutPost'
 import { getAllPostIds, getPostData } from '../../lib/posts'
 import Date from '../../components/date'
 import Head from 'next/head'
+import ReactMarkdown from 'react-markdown'
 
 export default function Post({ postData }) {
   return (
-    <Layout>
+    <LayoutPost>
       <Head>
         <title>{postData.title}</title>
       </Head>
-      <article>
-        <h1 className="">{postData.title}</h1>
-        <div className="">
+      <article className="prose">
+        <h1 className="text-2xl font-bold mb-2">{postData.title}</h1>
+        <div className="mb-6">
           <Date dateString={postData.date} />
         </div>
-        <div dangerouslySetInnerHTML={{ __html: postData.contentHtml }} />
+        <ReactMarkdown>{postData.contentHtml}</ReactMarkdown>
       </article>
-    </Layout>
+    </LayoutPost>
   )
 }
 
