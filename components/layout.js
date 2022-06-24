@@ -7,7 +7,7 @@ export const siteTitle = 'Jordi Capellades'
 
 export default function Layout({ children, home }) {
   return (
-    <div className="container mt-24 mx-auto flex flex-col items-center justify-center">
+    <div className="container mt-10 mx-auto flex flex-col items-center justify-center">
       <Head>
         <title>Jordi Capellades</title>
         <link rel="icon" href="https://emojicdn.elk.sh/🦁" />
