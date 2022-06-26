@@ -53,10 +53,21 @@ export default function Home({ allPostsData }) {
           </p>
         </section>
         <section>
-          <Link href="/posts">
-            <a className="">Posts</a>
-          </Link>
+          <h2 className="text-lg font-bold mb-4">Work:</h2>
+          <ul>
+            <li>Notes app</li>
+            <li>Clone Spotify</li>
+          </ul>
         </section>
+        <section>
+          <h2 className="text-lg font-bold mb-4">Personal projects:</h2>
+          <ul>
+            <li>My personal website</li>
+            <li>Notes, a minimalism note app</li>
+            <li>Spotofu, a spotify clone with Next and Tailwind</li>
+          </ul>
+        </section>
+        <section></section>
       </Layout>
     </>
   )
