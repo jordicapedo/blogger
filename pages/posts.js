@@ -1,4 +1,4 @@
-import Layout from '../components/layout'
+import LayoutPosts from '../components/layoutPosts'
 import Head from 'next/head'
 import { getSortedPostsData } from '../lib/posts'
 import Link from 'next/link'
@@ -6,17 +6,17 @@ import Date from '../components/date'
 
 export default function Post({ allPostsData }) {
   return (
-    <Layout>
+    <LayoutPosts>
       <Head>
         <title>Jordi's Blog</title>
       </Head>
       <section className="">
         <h1 className="text-2xl font-bold mb-4">Blog</h1>
-        <ul className="">
+        <ul className="text-xs md:text-base">
           {allPostsData.map(({ id, date, title }) => (
-            <li className="" key={id}>
+            <li className="flex items-center justify-between gap-5" key={id}>
               <Link href={`/posts/${id}`}>
-                <a>{title}</a>
+                <a className="no-underline hover:underline">{title}</a>
               </Link>
               <br />
               <small className="">
@@ -26,7 +26,7 @@ export default function Post({ allPostsData }) {
           ))}
         </ul>
       </section>
-    </Layout>
+    </LayoutPosts>
   )
 }
 

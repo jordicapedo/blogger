@@ -8,10 +8,6 @@ module.exports = {
     fontFamily: {
       title: ['Fraunces', 'serif']
     },
-    container: {
-      center: true,
-      padding: '2rem'
-    },
     extend: {}
   },
   plugins: [require('@tailwindcss/typography')]
