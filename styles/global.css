@@ -3,7 +3,18 @@
 @tailwind utilities;
 
 @layer base {
-  h1 {
-    font-family: 'Fraunces', serif;
+  html {
+    font-family: 'Public Sans', sans-serif;
   }
+  h1 {
+    font-family: 'Fraunces', serif;    
+  }  
+}
+
+@layer components {
+  .link {
+    @apply decoration-rose-600 text-rose-600 hover:decoration-rose-400 hover:text-rose-400
+  }
+
+  
 }

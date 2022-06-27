@@ -16,7 +16,7 @@ class MyDocument extends Document {
           />
           <link rel="icon" href="https://emojicdn.elk.sh/🌍" />
           <title>Jordi Capellades</title>
-          <meta name="description" content="Jordi website using Next.js" />
+          <meta name="description" content="Jordi website" />
           <meta
             property="og:image"
             content={`https://og-image.vercel.app/${encodeURI(

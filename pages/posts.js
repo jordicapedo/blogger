@@ -1,4 +1,4 @@
-import LayoutPosts from '../components/layoutPosts'
+import LayoutPosts from '../components/layout-posts'
 import Head from 'next/head'
 import { getSortedPostsData } from '../lib/posts'
 import Link from 'next/link'

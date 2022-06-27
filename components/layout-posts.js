@@ -1,4 +1,3 @@
-import Image from 'next/image'
 import Link from 'next/link'
 import Navbar from './navbar'
 
@@ -9,22 +8,7 @@ export default function Layout({ children, home }) {
   return (
     <>
       <Navbar />
-      <div className="prose container mt-10 mx-auto flex flex-col items-center justify-center px-8">
-        <header className="flex items-center flex-col gap-3">
-          {home && (
-            <>
-              <Image
-                priority
-                src="/images/profile.jpg"
-                className="rounded-full w-32 h-32 mx-auto"
-                height={144}
-                width={144}
-                alt={name}
-              />
-              <h1 className="text-2xl font-bold">{name}</h1>
-            </>
-          )}
-        </header>
+      <div className="prose container mt-10 mx-auto px-8">
         <main className="mb-10">
           {children}
           {!home && (

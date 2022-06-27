@@ -1,13 +1,10 @@
 import Layout from '../components/layout'
 import { getSortedPostsData } from '../lib/posts'
-import Link from 'next/link'
 import Head from 'next/head'
-import Navbar from '../components/navbar'
 
-export default function Home({ allPostsData }) {
+export default function Home() {
   return (
     <>
-      <Navbar />
       <Layout home>
         <Head>
           <title>Jordi Capellades</title>
@@ -16,7 +13,7 @@ export default function Home({ allPostsData }) {
           <p className="">
             Hi! 👋 I'm a developer based in{' '}
             <a
-              className="decoration-[#e11d48] text-[#e11d48] font-bold"
+              className="link"
               target="_blank"
               href="https://www.google.es/maps/place/Barcelona/@41.3926467,2.0701495,12z/data=!3m1!4b1!4m5!3m4!1s0x12a49816718e30e5:0x44b0fb3d4f47660a!8m2!3d41.3873974!4d2.168568"
             >
@@ -29,7 +26,7 @@ export default function Home({ allPostsData }) {
             I'm also a big fan of the open-source community and I'm always
             trying to learn new things. You can also find me on{' '}
             <a
-              className="decoration-[#e11d48] text-[#e11d48] font-bold"
+              className="link"
               href="https://twitter.com/CodesJordi"
               target="_blank"
               title="Twitter"
@@ -38,7 +35,7 @@ export default function Home({ allPostsData }) {
             </a>{' '}
             and{' '}
             <a
-              className="decoration-[#e11d48] text-[#e11d48] font-bold"
+              className="link"
               href="https://github.com/jordicapedo"
               target="_blank"
               title="Github"
@@ -55,8 +52,41 @@ export default function Home({ allPostsData }) {
         <section>
           <h2 className="text-lg font-bold mb-4">Work:</h2>
           <ul>
-            <li>Notes app</li>
-            <li>Clone Spotify</li>
+            <li>
+              Frontend and User tester in{' '}
+              <a
+                className="link"
+                href="https://www.sporttips.com/"
+                target="_blank"
+              >
+                Sporttips
+              </a>{' '}
+              App.
+            </li>
+            <li>
+              Develop a SPA for{' '}
+              <a
+                className="link"
+                href="https://www.sabaparking.co.uk/"
+                target="_blank"
+              >
+                SABA (uk)
+              </a>{' '}
+              workers using Vue and Bootstrap.
+            </li>
+            <li>
+              Worked at{' '}
+              <a className="link" href="https://www.fhios.es/" target="_blank">
+                FHIOS
+              </a>{' '}
+              from 2020 to 2022. I was in charge of the Frontend for some of the
+              projects.
+            </li>
+            <li>
+              Worked at Edittec from 2018 to 2020 as a Full-stack development
+              using HTML, JS, CSS, MySQL and PHP. Also, I used drupal at the
+              level of site-building.
+            </li>
           </ul>
         </section>
         <section>
@@ -64,7 +94,7 @@ export default function Home({ allPostsData }) {
           <ul>
             <li>My personal website</li>
             <li>Notes, a minimalism note app</li>
-            <li>Spotofu, a spotify clone with Next and Tailwind</li>
+            <li>A Spotify clone with Next and Tailwind</li>
           </ul>
         </section>
         <section></section>
