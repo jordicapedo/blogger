@@ -12,13 +12,12 @@ export default function Post({ allPostsData }) {
       </Head>
       <section className="">
         <h1 className="text-2xl font-bold mb-4">Blog</h1>
-        <ul className="text-xs md:text-base">
+        <ul className="">
           {allPostsData.map(({ id, date, title }) => (
-            <li className="flex items-center justify-between gap-5" key={id}>
+            <li className="flex flex-col sm:flex-row justify-between" key={id}>
               <Link href={`/posts/${id}`}>
                 <a className="no-underline hover:underline">{title}</a>
               </Link>
-              <br />
               <small className="">
                 <Date dateString={date} />
               </small>
