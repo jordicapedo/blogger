@@ -27,7 +27,7 @@ export const BlogIcon = () => {
 export const TwitterIcon = () => {
   return (
     <svg
-      className="mx-auto h-7 w-7 hover:scale-110 active:scale-95 transition-transform fill-zinc-400"
+      className="mx-auto h-7 w-7 hover:scale-110 active:scale-95 transition-transform fill-sky-600"
       xmlns="http://www.w3.org/2000/svg"
       viewBox="0 0 256 256"
     >
@@ -40,7 +40,7 @@ export const TwitterIcon = () => {
 export const GithubIcon = () => {
   return (
     <svg
-      className="mx-auto h-7 w-7 hover:scale-110 active:scale-95 transition-transform fill-zinc-400"
+      className="mx-auto h-7 w-7 hover:scale-110 active:scale-95 transition-transform fill-zinc-800"
       xmlns="http://www.w3.org/2000/svg"
       viewBox="0 0 16 16"
     >
