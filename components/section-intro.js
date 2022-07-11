@@ -2,7 +2,7 @@ export default function Intro() {
   return (
     <section className="">
       <p className="">
-        Hi! 👋 I'm a developer based in{' '}
+        Hi! I'm a developer based in{' '}
         <a
           className="link"
           target="_blank"

@@ -8,7 +8,6 @@ export const siteTitle = 'Jordi Capellades'
 export default function Layout({ children, home }) {
   return (
     <>
-      <Navbar />
       <div className="prose container mt-10 mx-auto flex flex-col items-center justify-center px-8">
         <header className="flex items-center flex-col gap-3">
           {home && (

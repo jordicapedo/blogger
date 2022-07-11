@@ -7,7 +7,6 @@ export const siteTitle = 'Jordi Capellades'
 export default function Layout({ children, home }) {
   return (
     <>
-      <Navbar />
       <div className="prose container mt-10 mx-auto px-8">
         <main className="mb-10">
           {children}

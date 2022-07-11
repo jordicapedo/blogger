@@ -1,8 +1,8 @@
 import Document, { Html, Head, Main, NextScript } from 'next/document'
+import Navbar from '../components/navbar'
 
 const name = 'Jordi Capellades'
 export const siteTitle = 'Jordi Capellades'
-
 class MyDocument extends Document {
   render() {
     return (
@@ -15,7 +15,6 @@ class MyDocument extends Document {
             rel="stylesheet"
           />
           <link rel="icon" href="https://emojicdn.elk.sh/🌍" />
-          <title>Jordi Capellades</title>
           <meta name="description" content="Jordi website" />
           <meta
             property="og:image"
@@ -27,6 +26,7 @@ class MyDocument extends Document {
           <meta name="twitter:card" content="summary_large_image" />
         </Head>
         <body>
+          <Navbar />
           <Main />
           <NextScript />
         </body>
