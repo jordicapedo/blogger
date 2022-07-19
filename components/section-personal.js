@@ -3,7 +3,7 @@ export default function Personal() {
     <section>
       <h2 className="text-lg font-bold mb-4">Personal projects:</h2>
       <ul>
-        <li>My personal website</li>
+        <li>This personal website</li>
         <li>
           <a
             className="link"
@@ -12,9 +12,10 @@ export default function Personal() {
           >
             Motes
           </a>
-          , a minimalism note app
+          , a simple note app
         </li>
         <li>A Spotify clone with Next and Tailwind</li>
+        <li>Baul, a personal password manager. (In process)</li>
       </ul>
     </section>
   )
