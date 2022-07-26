@@ -15,7 +15,7 @@ export default function Personal() {
           , a simple note app
         </li>
         <li>A Spotify clone with Next and Tailwind</li>
-        <li>Baul, a personal password manager. (In process)</li>
+        <li>Vault, a personal password manager. (In process)</li>
       </ul>
     </section>
   )
